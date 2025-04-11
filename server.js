@@ -19,7 +19,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/project_1')
     .catch(err => console.error('❌ MongoDB connection error:', err));
 
 // Basic Routes
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'views', 'index.html')));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 app.get('/register.html', (req, res) => res.sendFile(path.join(__dirname, 'views', 'register.html')));
 app.get('/login.html', (req, res) => res.sendFile(path.join(__dirname, 'views', 'login.html')));
 app.get('/road_map.html', (req, res) => res.sendFile(path.join(__dirname, 'views', 'road_map.html')));
