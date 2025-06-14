@@ -18,7 +18,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        # Get JSON data from request
+        # Get JSON data from the request
         data = request.get_json()
         
         # Extract input values in correct order
